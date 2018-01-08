@@ -10,6 +10,8 @@ class Serve < Formula
 
   def install
     prefix.install "serve"
+    libexec.install Dir["*"]
+    bin.install_symlink libexec/"bin/serve"
   end
 
   test do
