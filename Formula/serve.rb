@@ -10,7 +10,6 @@ class Serve < Formula
 
   def install
     prefix.install "serve"
-    bash_completion.install "bash_completion" => "serve"
   end
 
   test do
