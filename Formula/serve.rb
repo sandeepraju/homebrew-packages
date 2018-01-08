@@ -15,8 +15,7 @@ class Serve < Formula
   keg_only :provided_by_osx
 
   def install
-    libexec.install Dir["*"]
-    bin.install_symlink libexec/"bin/serve"
+    prefix.install Dir["*"]
   end
 
   test do
