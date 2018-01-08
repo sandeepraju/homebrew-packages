@@ -9,7 +9,7 @@ class Serve < Formula
   bottle :unneeded
 
   def install
-    prefix.install "serve", "serve"
+    prefix.install "serve"
     bash_completion.install "bash_completion" => "serve"
   end
 
